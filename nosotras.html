@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+      
+</head>
+<body class="font-playfair">
+    <nav class="bg-pink-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-pink-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex flex-shrink-0 items-center">
+                <img class="h-11 w-auto" src="images/Logo.png" alt="">
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <a href="index.html" class="rounded-md px-5 py-3 text-sm font-medium text-pink-200 hover:bg-pink-700 hover:text-pink-50">Inicio</a>
+                  <a href="catalogo.html" class="rounded-md px-5 py-3 text-sm font-medium text-pink-200 hover:bg-pink-700 hover:text-pink-50">Catálogo</a>
+                  <a href="nosotras.html" class="rounded-md bg-rose-950 px-5 py-3 text-sm font-medium text-white">Nosotras</a>
+                  <a href="contacto.html" class="rounded-md px-5 py-3 text-sm font-medium text-pink-200 hover:bg-pink-700 hover:text-pink-50">Contacto</a>
+                </div>
+              </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pink-800">
+                <span class="sr-only">View cart</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h18l-2 12H5L3 3z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 21h12" />
+                </svg>
+              </button>
+              <div class="relative ml-3">
+                <div>
+                <button type="button" class="relative flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pink-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                    <span class="sr-only">Open user menu</span>
+                    <img class="h-8 w-8 rounded-full" src="images/icono.png" alt="">
+                    </button>
+                    </div>
+                    <div id="dropdown-menu" class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                    <a href="perfil.html" class="block px-4 py-2 text-sm text-gray-700">Perfil</a>
+                    <a href="sesion.html" class="block px-4 py-2 text-sm text-gray-700">Iniciar sesión</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Inicio</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-pink-700 hover:text-white">Catálogo</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-pink-700 hover:text-white">Nosotras</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-pink-700 hover:text-white">Contacto</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+        <img src="images/image18.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
+        <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
+          <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        </div>
+        <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu" aria-hidden="true">
+          <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        </div>
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:mx-0">
+            <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Sobre nosotras</h2>
+            <p class="mt-6 text-lg leading-8 text-gray-300">En Lace & Grace, somos un equipo de mujeres apasionadas que creen en el poder de la moda para empoderar y expresar la personalidad única de cada mujer. Nuestra misión es ofrecer una colección de zapatos bellos, accesibles y cómodos, diseñados para adaptarse a todas las ocasiones, inspirando a cada mujer a sentirse segura y auténtica en su propio estilo.</p>
+          </div>
+            <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="flex flex-col-reverse">
+                <dt class="text-base leading-7 text-gray-300">Marcas aliadas</dt>
+                <dd class="text-2xl font-bold leading-9 tracking-tight text-white">12+</dd>
+              </div>
+              <div class="flex flex-col-reverse">
+                <dt class="text-base leading-7 text-gray-300">Trabajadoras empoderadas</dt>
+                <dd class="text-2xl font-bold leading-9 tracking-tight text-white">300+</dd>
+              </div>
+              <div class="flex flex-col-reverse">
+                <dt class="text-base leading-7 text-gray-300">Calidad garantizada</dt>
+                <dd class="text-2xl font-bold leading-9 tracking-tight text-white">100%</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-white py-24 sm:py-32">
+        <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+          <div class="max-w-2xl">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Conoce nuestro equipo</h2>
+            <p class="mt-6 text-lg leading-8 text-gray-600">Somos un grupo de amigas y profesionales que decidieron unir sus fuerzas para crear una tienda que represente los valores de inclusión, diversidad y empoderamiento femenino. Cada par de zapatos que ofrecemos ha sido seleccionado cuidadosamente, pensando en las necesidades y deseos de nuestras clientas.</p>
+          </div>
+          <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="h-16 w-16 rounded-full" src="images/s1.jpg" alt="">
+                <div>
+                  <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Maria Londoño</h3>
+                  <p class="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / CEO</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="h-16 w-16 rounded-full" src="images/s2.jpg" alt="">
+                <div>
+                  <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Leslie Ochoa</h3>
+                  <p class="text-sm font-semibold leading-6 text-indigo-600">Directora Creativa</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="h-16 w-16 rounded-full" src="images/s3.jpg" alt="">
+                <div>
+                  <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Jamie Alexis</h3>
+                  <p class="text-sm font-semibold leading-6 text-indigo-600">Gerente de Marketing</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="h-16 w-16 rounded-full" src="images/s4.jpg" alt="">
+                <div>
+                  <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Sasha Méndez</h3>
+                  <p class="text-sm font-semibold leading-6 text-indigo-600">Diseñadora</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="h-16 w-16 rounded-full" src="images/s5.jpg" alt="">
+                <div>
+                  <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Mariana Serna</h3>
+                  <p class="text-sm font-semibold leading-6 text-indigo-600">Coordinadora de Sostenibilidad</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="h-16 w-16 rounded-full" src="images/s6.jpg" alt="">
+                <div>
+                  <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Ariadna Musk</h3>
+                  <p class="text-sm font-semibold leading-6 text-indigo-600">Gerente de Operaciones</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+<footer class="bg-pink-900 text-white py-4">
+  <div class="container mx-auto text-center">
+    <p class="text-sm">&copy; 2024 Lace & Grace. Todos los derechos reservados.</p>
+    <p class="text-sm">Diseñado con ❤️ por Mujeres Empoderadas</p>
+  </div>
+</footer>
+
+<script>
+  const userMenuButton = document.getElementById('user-menu-button');
+  const dropdownMenu = document.getElementById('dropdown-menu');
+  userMenuButton.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('hidden');
+  });
+  window.addEventListener('click', function(event) {
+    if (!userMenuButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+      dropdownMenu.classList.add('hidden');
+    }
+  });
+</script>
+</body>
+</html>

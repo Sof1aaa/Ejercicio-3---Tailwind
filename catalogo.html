@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+      
+</head>
+<body class="font-playfair">
+    <nav class="bg-pink-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-pink-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex flex-shrink-0 items-center">
+                <img class="h-11 w-auto" src="images/Logo.png" alt="">
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <a href="index.html" class="rounded-md px-5 py-3 text-sm font-medium text-pink-200 hover:bg-pink-700 hover:text-pink-50">Inicio</a>
+                  <a href="catalogo.html" class="rounded-md bg-rose-950 px-5 py-3 text-sm font-medium text-white">Catálogo</a>
+                  <a href="nosotras.html" class="rounded-md px-5 py-3 text-sm font-medium text-pink-200 hover:bg-pink-700 hover:text-pink-50">Nosotras</a>
+                  <a href="contacto.html" class="rounded-md px-5 py-3 text-sm font-medium text-pink-200 hover:bg-pink-700 hover:text-pink-50">Contacto</a>
+                </div>
+              </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pink-800">
+                <span class="sr-only">View cart</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h18l-2 12H5L3 3z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 21h12" />
+                </svg>
+              </button>
+              <div class="relative ml-3">
+                <div>
+                <button type="button" class="relative flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-pink-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                    <span class="sr-only">Open user menu</span>
+                    <img class="h-8 w-8 rounded-full" src="images/icono.png" alt="">
+                    </button>
+                    </div>
+                    <div id="dropdown-menu" class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                    <a href="perfil.html" class="block px-4 py-2 text-sm text-gray-700">Perfil</a>
+                    <a href="sesion.html" class="block px-4 py-2 text-sm text-gray-700">Iniciar sesión</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Inicio</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-pink-700 hover:text-white">Catálogo</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-pink-700 hover:text-white">Nosotras</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-pink-700 hover:text-white">Contacto</a>
+          </div>
+        </div>
+      </nav>
+
+<section class="bg-purple-50 pt-8">
+    <h2 class="text-3xl font-bold text-center mb-4">Nuestro Catálogo</h2>      
+ <!-- catalogo-->     
+ <div class="bg-purple-50">
+    <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        <h2 class="sr-only">Productos</h2>
+
+        <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 mb-8"> 
+            <!-- Producto 1 -->
+            <a href="#" class="group" onclick="openModal('Charol Jane Hounds', '$59.99', 'Elegantes y versátiles, estos zapatos de charol negros son el complemento perfecto para cualquier ocasión formal. Con un acabado brillante que resalta su diseño clásico, ofrecen comodidad y estilo en cada paso.', 'images/image4.jpg')">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/image4.jpg" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Charol Jane Hounds</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$59.99</p>
+            </a>
+
+            <!-- Producto 2 -->
+            <a href="#" class="group" onclick="openModal('Sandalias Venus', '$45.99', 'Estas elegantes sandalias de tacón en cuero son ideales para cualquier evento especial. Su diseño sofisticado y cómodo tacón te permitirán lucir fabulosa mientras disfrutas de la máxima comodidad.', 'images/image5.jpg')">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/image5.jpg" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Sandalias Venus</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$45.99</p>
+            </a>
+            <!-- Producto 3 -->
+            <a href="#" class="group" onclick="openModal('Plataforma Milton', '$45', 'Dale un toque divertido a tu look con estos zapatos de plataforma cómodos y ligeros. Su diseño versátil y moderno los hace ideales para usar durante el día o para salir por la noche. del producto aquí.', 'images/image6.jpg')">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/image6.jpg" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Plataforma Milton</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$50.99</p>
+            </a>
+            <!-- Producto 4 -->
+            <a href="#" class="group" onclick="openModal('Tenis Bigioni', '$30', 'Estos tenis casuales son perfectos para un look relajado y moderno. Con su diseño fresco y cómodo, son ideales para el día a día, ya sea para pasear o para actividades informales.', 'images/image7.jpg')">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/image7.jpg" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Tenis Bigioni</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$30.99</p>
+            </a>
+            <!-- Producto 5 -->
+            <a href="#" class="group" onclick="openModal('Mocasines Heidy', '$29.99', 'Estos mocasines combinan un diseño clásico con una comodidad excepcional, perfectos para el trabajo o una salida casual. Su acabado en cuero suave les otorga un toque de sofisticación.', 'images/image8.jpg')">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/image8.jpg" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Mocasines Heidy</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$29.99</p>
+            </a>
+            <!-- Producto 6 -->
+            <a href="#" class="group" onclick="openModal('Botines Santorinni', '$69.99', 'Estos botines combinan un diseño moderno con un toque clásico, perfectos para cualquier ocasión. Hechos de material de alta calidad, ofrecen comodidad y estilo en cada paso.', 'images/image9.jpg')">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/image9.jpg" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Botines Santorinni</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$69.99</p>
+            </a>
+            <!-- Producto 7 -->
+            <a href="#" class="group" onclick="openModal('Sandalias Clarissa', '$19.99', 'Con un estampado único y moderno, estas sandalias son perfectas para quienes quieren destacar. Su ajuste seguro y material transpirable aseguran comodidad durante todo el día.', 'images/image10.jpg')">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/image10.jpg" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Sandalias Clarissa</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$19.99</p>
+            </a>
+            <!-- Producto 8 -->
+            <a href="#" class="group" onclick="openModal('Zapatillas Bigioni', '$24.99', 'Estas zapatillas ofrecen un estilo atemporal que nunca pasa de moda. Con una construcción duradera y cómoda, son perfectas para el uso diario y combinan fácilmente con cualquier atuendo.', 'images/image11.jpg')">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/image11.jpg" alt="Earthen Bottle" class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Zapatillas Bigioni </h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$24.99</p>
+            </a>
+            <!-- Producto 9 -->
+            <a href="#" class="group" onclick="openModal('Bota Miss', '$71.99', 'Estas versátiles botas de caña alta son perfectas para cualquier temporada. Con un diseño elegante y materiales cómodos, ofrecen un ajuste perfecto y soporte, ideal para llevar durante todo el día.', 'images/image12.jpg')">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/image12.jpg" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Bota Miss</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$71.99</p>
+            </a>
+            <!-- Producto 10 -->
+            <a href="#" class="group" onclick="openModal('Bota Steve', '$79.99', 'Esta sofisticada bota de cuero hasta la rodilla combina elegancia y comodidad. Su diseño estilizado resalta la figura y ofrece un ajuste ceñido, perfecto para complementar cualquier look de otoño e invierno.', 'images/image13.jpg')">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/image13.jpg" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Bota Steve</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$79.99</p>
+            </a>
+            <!-- Producto 11 -->
+            <a href="#" class="group" onclick="openModal('Botines Stella', '$69.99', 'Con su forma innovadora y detalles únicos, los botines Sculpted Mid son ideales para añadir un toque moderno a cualquier atuendo. La suela acolchada proporciona soporte y confort, haciendo que sean perfectos para largas jornadas.', 'images/image14.jpg')">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/image14.jpg" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Botines Stella</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$69.99</p>
+            </a>
+            <!-- Producto 12 -->
+            <a href="#" class="group" onclick="openModal('Botines Jamie', '$69.99', 'Estos botines son el complemento perfecto para cualquier guardarropa. Su puntera afilada y tacón alto brindan un aire contemporáneo, mientras que su construcción cómoda asegura que puedas lucir fabulosa sin sacrificar la comodidad.', 'images/image15.jpg')">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/image15.jpg" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Botines Jamie</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$69.99</p>
+            </a>
+            <!-- Producto 13 -->
+            <a href="#" class="group" onclick="openModal('Tacón Melanny', '$45.99', 'Con un diseño moderno y vanguardista, estos zapatos cuentan con un tacón cilíndrico que ofrece estabilidad y estilo. Su parte superior elegante y materiales suaves garantizan un ajuste cómodo, perfecto para destacar en cualquier evento.', 'images/image1.jpg')">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/image1.jpg" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Tacón Melanny</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$45.99</p>
+            </a>
+            <!-- Producto 14 -->
+            <a href="#" class="group" onclick="openModal('Tenis-Botas Jackie', '$39.99', 'Con un estilo urbano y versátil, estos tenis botas de cuero ofrecen comodidad y soporte en cada paso. Su diseño robusto y moderno se combina con la durabilidad del cuero, haciéndolos perfectos para el día a día.', 'images/image2.jpg')">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/image2.jpg" alt="" class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Tenis-Botas Jackie</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$39.99</p>
+            </a>
+            <!-- Producto 15 -->
+            <a href="#" class="group" onclick="openModal('Zapatilla Gino', '$24.99', 'Diseñadas para un look desenfadado, estas zapatillas de plataforma son ideales para el día a día. Su diseño versátil permite combinarlas fácilmente con jeans, vestidos o faldas, haciendo que cada paso sea con estilo.', 'images/image16.jpg')">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/image16.jpg" alt="Earthen Bottle" class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Zapatilla Gino</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$24.99</p>
+            </a>
+            <!-- Producto 16 -->
+            <a href="#" class="group" onclick="openModal('Tacón Patty', '$45.99', 'Estos zapatos destalonados presentan un sofisticado diseño con punta puntiaguda y un alto tacón de aguja, perfectos para elevar cualquier conjunto. Su estilo elegante es ideal para ocasiones especiales o noches de fiesta.', 'images/image17.jpg')">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                    <img src="images/image17.jpg" alt="Earthen Bottle" class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-700">Tacón Patty</h3>
+                <p class="mt-1 text-lg font-medium text-gray-900">$45.99</p>
+            </a>
+        </div>
+
+<div class="fixed inset-0 z-10 hidden overflow-y-auto" id="quickViewModal">
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="fixed inset-0 bg-black opacity-30" onclick="closeModal()"></div>
+        <div class="relative mx-auto w-full max-w-lg rounded-lg bg-white p-6">
+            <button class="absolute top-0 right-0 p-2 text-gray-400 hover:text-gray-500" onclick="closeModal()">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+            <h2 class="text-lg font-medium text-gray-900"></h2>
+            <img src="" alt="Producto" class="mt-4 w-full h-64 object-cover">
+            <p class="mt-2 text-lg font-medium text-gray-900 price"></p>
+            <p class="mt-1 text-gray-500 description"></p>
+                    <div class="mt-10">
+                        <button type="button" class="flex w-full items-center justify-center rounded-md border border-transparent bg-pink-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-pink-950">
+                            Agregar al carrito
+                        </button>
+                    </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<footer class="bg-pink-900 text-white py-4 w-full">
+    <div class="container mx-auto text-center w-full">
+      <p class="text-sm">&copy; 2024 Lace & Grace. Todos los derechos reservados.</p>
+      <p class="text-sm">Diseñado con ❤️ por Mujeres Empoderadas</p>
+    </div>
+  </footer> 
+
+<script>
+  const userMenuButton = document.getElementById('user-menu-button');
+  const dropdownMenu = document.getElementById('dropdown-menu');
+  userMenuButton.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('hidden');
+  });
+  window.addEventListener('click', function(event) {
+    if (!userMenuButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+      dropdownMenu.classList.add('hidden');
+    }
+  });
+
+  function openModal(title, price, description, imgSrc) {
+    document.querySelector('#quickViewModal img').src = imgSrc;
+    document.querySelector('#quickViewModal h2').innerText = title;
+    document.querySelector('#quickViewModal p.price').innerText = price;
+    document.querySelector('#quickViewModal p.description').innerText = description;
+    document.getElementById('quickViewModal').classList.remove('hidden');
+}
+function closeModal() {
+    document.getElementById('quickViewModal').classList.add('hidden');
+}
+
+
+</script>
+</body>
+
+</html>
